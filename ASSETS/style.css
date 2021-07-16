@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(239, 234, 234);
+   
+}
+p{
+    font-size: 1.4rem;
+}
+a{
+    color: #1877f2;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    max-width: 15rem;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 1rem;
+    min-height: 100vh;
+    
+    
+  
+}
+
+header{
+    text-align: center;
+}
+
+.form{
+    border-radius: 0.6rem;
+    background: white;
+    width: 22rem;
+    padding: 0 10px;
+    
+}
+
+.input-field{
+    width: 21rem;
+    height: 3.5rem;  
+    margin: 1rem 0;
+    border-radius: 0.4rem;
+    border: 1px solid #8a8d91;
+    outline: none;
+}
+
+.input-field:focus{
+    border: 1px solid #1877f2;
+}
+.input-field::placeholder{
+    font-size: 1.3rem;
+    padding: 5px 0 5px 10px;
+    color: lightgray;
+}
+.btn-login{
+   width: 21rem;
+   height:3.5rem;
+   padding:5px;
+   background: #1877f2;
+   font-size: 1.3rem;
+   font-family: 'Poppins', sans-serif;
+   border-radius: 0.3rem;
+   border: transparent;
+   color: white;
+   font-weight: 600;
+   
+}
+.btn-create{
+    width: 10rem;
+    height:3.5rem;
+    padding:5px;
+    background:rgb(43, 143, 43);
+    font-size: 1rem;
+    font-weight: 600;
+    border: transparent;
+    color: white;
+    display: block;
+    margin: 1rem 25%;
+    border-radius: 0.3rem;
+}
+@media (min-width:765px) {
+    header{
+        text-align: left;
+        max-width: 35rem;
+        margin-left: 5rem;
+    }
+    .input-field{
+        width: 25rem;
+}
+.form{
+    width: 27rem;
+}
+.btn-login{
+    width: 25rem;
+}
+}
